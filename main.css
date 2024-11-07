@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    display: inline;
+    color: #d2bb8e;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+h2{
+    color: #d2bb8e;
+    border-bottom: 2px solid #d2bb8e;
+    margin: 12px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+} 
+h3{
+    color: #d2bb8e;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+
+.cabecalho img {
+    width: 42px;
+}
+
+#produtos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#produtos ul li {
+    list-style: none;
+    background-color: #ece5d8;
+    width: 23%;
+    padding: 12px;
+    margin-top: 12px;
+}
+#produtos ul li img{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+header{
+    padding: 8px 0;
+    align-items: center;
+    background-color: #ece5d8;
+}
+header li {
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+}
+header li a {
+    text-decoration: none;
+    color: #d2bb8e;
+    font-weight: bold;
+}
+
+header li a:hover{
+    color: #4a556a;
+}
+main{
+    justify-content: space-between;
+}
+.cabecalho{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.cabecalho-interno{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+#produtos button{
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 4px;
+    background-color: #4a556a;
+    border-style: none;
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+}
+#produtos button:hover{
+    background-color: #fb805e;
+    cursor: pointer;
+}
+#sobre{
+    display: flex;
+}
+#sobre img{
+    max-width: 360px;
+    margin: 16px 16px 16px 0;
+}
+
+@media screen and (max-width: 1023px){
+    #produtos ul li {
+        width: 46%;
+        margin-bottom: 16px;
+    }
+    #sobre{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #sobre img{
+        margin-top: 6%;
+        margin-bottom: 6%;
+        width: 60%;
+    }
+    .container{
+        margin: 0 6%;
+        max-width: 640px;
+    }
+
+}
+@media screen and (max-width: 640px){
+    #produtos ul li {
+        width: 96%;
+        margin-bottom: 16px;
+    }
+    #sobre{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #sobre img{
+        margin-top: 6%;
+        margin-bottom: 6%;
+        width: 100%;
+    }
+
+    .container{
+        margin: 0 6%;
+        max-width: 640px;
+    }
+
+}
